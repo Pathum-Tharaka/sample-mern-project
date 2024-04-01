@@ -1,10 +1,10 @@
 import React from "react";
-import nav from "../nav/nav";
+import Nav from "../nav/Nav";
 
 function userDetails() {
     return (
         <div>
-            <nav/>
+            <Nav/>
             <h1>User Details</h1>
 
         </div>
