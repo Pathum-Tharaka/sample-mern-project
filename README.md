@@ -1,2 +1,2 @@
 # sample-mern-project
- user management
+ project management
