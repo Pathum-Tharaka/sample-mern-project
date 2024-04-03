@@ -1,14 +1,15 @@
 import React from "react";
-import Nav from "../nav/Nav";
+import AppBar from '../Components/Appbar';
 
-function userDetails() {
+function Userdetails() {
     return (
         <div>
-            <Nav/>
+            <AppBar/>
+         
             <h1>User Details</h1>
 
         </div>
         );
 }
 
-export default userDetails;
+export default Userdetails;

@@ -1,14 +1,14 @@
 import React from "react";
-import Nav from "../nav/Nav";
+import AppBar from '../Components/Appbar';
 
-function AddUser() {
+function addUser() {
     return (
         <div>
-            <Nav/>
+            <AppBar/>
             <h1>Add User</h1>
 
         </div>
         );
 }
 
-export default AddUser;
+export default addUser;

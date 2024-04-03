@@ -1,10 +1,13 @@
 import React from "react";
-import Nav from "../nav/Nav";
+import AppBar from '../Components/Appbar';
+import Drawer from '../Components/menu';
+
 
 function home() {
   return (
     <div>
-      <Nav />
+      <AppBar/>
+      <Drawer/>
       <h1>home new my project</h1>
     </div>
   );
