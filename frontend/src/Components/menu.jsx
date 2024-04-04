@@ -65,8 +65,6 @@ export default function NestedList() {
       window.location.href = '/add-contacts';
     } else if (menuName === 'Projects' && subMenuName === 'All projects') {
       window.location.href = '/Allprojects';
-    }else if (menuName === 'Projects' && subMenuName === 'All projects') {
-      window.location.href = '/Allprojects';
     } else if (menuName === 'Projects' && subMenuName === 'New projects') {
       window.location.href = '/Newprojects';
     } else if (menuName === 'Projects' && subMenuName === 'Project categories') {

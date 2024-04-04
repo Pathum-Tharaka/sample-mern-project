@@ -1,11 +1,11 @@
 import React from "react";
-import AppBar from "../Components/Appbar";
-import Menu from "../Components/menu";
+
 
 
 function Addprojects(props) {
   // Example data for suppliers
   const {
+    
     projectID,
     projectName,
     projectBudget,
@@ -19,36 +19,21 @@ function Addprojects(props) {
   return (
     <div>
       
-      <AppBar />
-      <Menu />
+    
 
-      <div >
+      <div style={{ marginLeft: '255px', paddingTop: '80px' }} >
         <h1>Projects Display</h1>
         <br></br>
-        <style>
+        
+<h1>projectID: {projectID}</h1>
+<h1>projectName: {projectName}</h1>
+<h1>projectBudget: {projectBudget}</h1>
+<h1>Employees: {Employees}</h1>
+<h1>Status: {Status}</h1>
+<h1>startDate: {startDate}</h1>
+<h1>endDate: {endDate}</h1>
+<h1>projectType: {projectType}</h1>
 
-</style>
-
-<table>
-  <tr>
-    <th>ID</th>
-    <td>{projectID}</td>
-    <th>Name</th>
-    <td>{projectName}</td>
-    <th>Budget</th>
-    <td>{projectBudget}</td>
-    <th>Employees</th>
-    <td>{Employees}</td>
-    <th>Status</th>
-    <td>{Status}</td>
-    <th>Start Date</th>
-    <td>{startDate}</td>
-    <th>End Date</th>
-    <td>{endDate}</td>
-    <th>Project Type</th>
-    <td>{projectType}</td>
-  </tr>
-</table>
 <button>Update</button>
 <button>Delete</button>
 
