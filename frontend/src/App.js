@@ -5,8 +5,9 @@ import AllUsers from './Pages/AllUsers';
 import AddUsers from './Pages/AddUsers';
 import NoPages from './Pages/NoPages';
 import Supplier from './Pages/Supplier';
-import AllProjects from './Pages/pagesP/Allprojects';
-import NewProjects from './Pages/pagesP/Newprojects';
+import AllProject from './Pages/Allprojects';
+import NewProject from './Pages/Newprojects';
+import ProjectCategory from './Pages/Projectcategory';
 
 
 
@@ -26,8 +27,10 @@ function App() {
         <Route path = '/user/addusers' element = {<AddUsers/>}/>
         <Route path = '/user/allusers' element = {<AllUsers/>}/>
         <Route path = '/supplier' element = {<Supplier/>}/>
-        <Route path = '/Allprojects' element = {<AllProjects/>}/>
-        <Route path = '/Newprojects' element = {<NewProjects/>}/>
+        <Route path = '/Allprojects' element = {<AllProject/>}/>
+        <Route path = '/Newprojects' element = {<NewProject/>}/>
+        <Route path = '/Projectcategory' element = {<ProjectCategory/>}/>
+
       
         <Route path = '*' element = {<NoPages/>}/>
 

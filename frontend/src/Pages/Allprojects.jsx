@@ -1,4 +1,7 @@
 import React from 'react';
+import AppBar from '../Components/Appbar';
+import Menu from '../Components/menu';
+
 
 
 
@@ -16,6 +19,9 @@ const Allproject = () => {
 
     return (
         <div>
+            <AppBar />
+
+            <Menu />
            
         
 

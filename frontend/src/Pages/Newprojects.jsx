@@ -1,8 +1,10 @@
 import React from 'react';
+import AppBar from '../Components/Appbar';
+
+import Menu from '../Components/menu';
 
 
-
-const Newproject = () => {
+function Newproject() {
     // Example data for suppliers
     const projects = [
         { id: 1, name: 'project 1' },
@@ -10,14 +12,13 @@ const Newproject = () => {
         { id: 3, name: 'project 3' },
         { id: 4, name: 'project 4' },
         { id: 5, name: 'project 5' },
-
-    
     ];
 
     return (
         <div>
-           
-        
+
+            <AppBar />
+            <Menu />
 
             <div style={{ marginLeft: '255px', paddingTop: '80px' }}>
                 <h1>List of projects sample page</h1>
@@ -29,5 +30,5 @@ const Newproject = () => {
             </div>
         </div>
     );
-};
+}
 export default Newproject;
