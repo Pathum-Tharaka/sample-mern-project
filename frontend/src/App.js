@@ -31,8 +31,7 @@ function App() {
         <Route path = '/Newprojects' element = {<NewProject/>}/>
         <Route path = '/Projectcategory' element = {<ProjectCategory/>}/>
 
-      
-        <Route path = '*' element = {<NoPages/>}/>
+       <Route path = '*' element = {<NoPages/>}/>
 
 
 

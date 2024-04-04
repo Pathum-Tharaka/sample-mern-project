@@ -1,19 +1,19 @@
 const Projects = require("../Model/projectModel");
 
 const getAllprojects = async (req, res, next) => {
-    let projects;
+    let project;
     try {
-        projects = await Projects.find();
+        project = await Projects.find();
     } catch (err) {
         console.log(err);
     }
-    if (!projects) {
+    if (!project) {
         return res.status(404).json({ message: "No projects Found" });
     }
-    return res.status(200).json({ projects });
+    return res.status(200).json({ project });
 
 //display all projects
-return res.status(200).json({ projects});
+
 };
 
 //data insert

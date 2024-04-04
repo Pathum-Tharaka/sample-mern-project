@@ -4,10 +4,12 @@ const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./Routes/projectRoute");
 
-const app = express(); 
+const app = express();
+const cors = require("cors")
 
 //midleware
 app.use(express.json());
+app.use(cors());
 app.use("/projects", router);
 
 

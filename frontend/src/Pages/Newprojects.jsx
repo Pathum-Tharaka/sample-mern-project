@@ -1,34 +1,18 @@
-import React from 'react';
+import React from 'react'
 import AppBar from '../Components/Appbar';
-
 import Menu from '../Components/menu';
 
+function Newprojects() {
+  return (
+    <div style= {{ marginLeft: '255px', paddingTop: '80px'}}>
 
-function Newproject() {
-    // Example data for suppliers
-    const projects = [
-        { id: 1, name: 'project 1' },
-        { id: 2, name: 'project 2' },
-        { id: 3, name: 'project 3' },
-        { id: 4, name: 'project 4' },
-        { id: 5, name: 'project 5' },
-    ];
+      <AppBar />
+      <Menu />
 
-    return (
-        <div>
 
-            <AppBar />
-            <Menu />
-
-            <div style={{ marginLeft: '255px', paddingTop: '80px' }}>
-                <h1>List of projects sample page</h1>
-                <ul>
-                    {projects.map((project) => (
-                        <li key={project.id}>{project.name}</li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-    );
+      <h1>New projects</h1>
+    </div>
+  )
 }
-export default Newproject;
+
+export default Newprojects
