@@ -7,6 +7,7 @@ const router = require("./Routes/projectRoute");
 const app = express();
 const cors = require("cors");
 
+
 //midleware
 app.use(express.json());
 app.use(cors());

@@ -18,11 +18,11 @@ const getAllprojects = async (req, res, next) => {
 
 //data insert
 const addprojects = async (req, res, next) => {
-    const { projectID, projectName, projectBudget, Employees, Status, startDate, endDate, projectType } = req.body;
+    const {  projectName, projectBudget, Employees, Status, startDate, endDate, projectType } = req.body;
     let project;
     try {
         project = new Projects({
-            projectID,
+         
             projectName,
             projectBudget,
             Employees,
@@ -50,6 +50,7 @@ const id = req.params.id;
 let project;
 try {
     project = await Projects.findById(id);
+
 } catch (err) {
     console.log(err);
 }
@@ -63,11 +64,11 @@ return res.status(200).json({ project });
 
 const updateProjects = async (req, res, next) => {
     const id = req.params.id;
-     const { projectID, projectName, projectBudget, Employees, Status, startDate, endDate, projectType } = req.body;
+     const {  projectName, projectBudget, Employees, Status, startDate, endDate, projectType } = req.body;
     let project;
     try {
         project = await Projects.findByIdAndUpdate(id, {
-            projectID,
+            
             projectName,
             projectBudget,
             Employees,

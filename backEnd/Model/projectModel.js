@@ -3,10 +3,7 @@ const SchemaProject = mongoose.Schema;
 
 const projectSchema = new SchemaProject({
     
-    projectID: {
-        type: String,
-        required: true,
-    },
+    
 
     projectName: {
         type: String,

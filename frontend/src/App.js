@@ -7,7 +7,10 @@ import NoPages from "./Pages/NoPages";
 import Supplier from "./Pages/Supplier";
 import Allprojects from "./Pages/Allprojects";
 import Addprojects from "./Pages/Addprojects";
+import Newprojects from "./Pages/Newprojects";
+import Updateprojects from "./Pages/updateprojects";
 import ProjectCategory from "./Pages/Projectcategory";
+
 
 function App() {
   return (
@@ -22,7 +25,10 @@ function App() {
           <Route path="/supplier" element={<Supplier />} />
           <Route path="/Allprojects" element={<Allprojects />} />
           <Route path="/Addprojects" element={<Addprojects />} />
+          <Route path="/Newprojects" element={<Newprojects />} />
+          <Route path="/Allprojects/:projectID" element={<Updateprojects/>} />
           <Route path="/Projectcategory" element={<ProjectCategory />} />
+  
           <Route path="*" element={<NoPages />} />
         </Routes>
       </BrowserRouter>
