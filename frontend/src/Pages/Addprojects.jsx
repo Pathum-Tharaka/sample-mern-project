@@ -46,7 +46,7 @@ function Addprojects(props) {
             <td>{formatDate(endDate)}</td>
             <td>{projectType}</td>
             <td class="action-buttons">
-
+  <button class="update-button">Update</button>
   <button class="delete-button">Delete</button>
   <button class="report-button">Report</button>
 </td>
