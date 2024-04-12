@@ -9,7 +9,7 @@ function Updateprojects() {
     const[projects,setProjects]=useState({
     });
     const history=useNavigate();
-    const {id}=useParams().id;
+    const id=useParams().id;
 
     useEffect(()=>{
       const  fetchHandler  = async () => {
@@ -53,8 +53,8 @@ function Updateprojects() {
        
     
   return (
-    <div>
-      <h1>update projects</h1>
+    <div style={{ marginLeft: '255px', paddingTop: '80px' }}>
+    <h1>update projects</h1>
       <form onSubmit={handleSubmit}>
         <label>Project Name</label>
 

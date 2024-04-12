@@ -26,7 +26,7 @@ function App() {
           <Route path="/Allprojects" element={<Allprojects />} />
           <Route path="/Addprojects" element={<Addprojects />} />
           <Route path="/Newprojects" element={<Newprojects />} />
-          <Route path="/Allprojects/:projectID" element={<Updateprojects/>} />
+          <Route path="/Allprojects/:id" element={<Updateprojects/>} />
           <Route path="/Projectcategory" element={<ProjectCategory />} />
   
           <Route path="*" element={<NoPages />} />

@@ -1,17 +1,12 @@
 import React from "react";
 import "./Addprojects.css";
-import { Link } from 'react-router-dom';
-
-
-const formatDate = (dateString) => {
-  const date = new Date(dateString);
-  return date.toLocaleDateString("en-US");
-};
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Addprojects(props) {
   // Example data for suppliers
   const {
-   
+    _id,
     projectName,
     projectBudget,
     Employees,
@@ -21,12 +16,21 @@ function Addprojects(props) {
     projectType,
   } = props.Project;
 
+  const navigate = useNavigate();
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-US");
+  };
+
+  const handleUpdateClick = () => {
+    navigate(`/Allprojects/${_id}`);
+  };
+
   return (
     <div>
       <div style={{ marginLeft: "10px", paddingTop: "50px" }}>
         <table>
           <tr>
-            
             <th>Project Name</th>
             <th>Project Budget</th>
             <th>Employees</th>
@@ -37,7 +41,6 @@ function Addprojects(props) {
             <th>Action</th>
           </tr>
           <tr>
-           
             <td>{projectName}</td>
             <td>{projectBudget}</td>
             <td>{Employees}</td>
@@ -46,10 +49,12 @@ function Addprojects(props) {
             <td>{formatDate(endDate)}</td>
             <td>{projectType}</td>
             <td class="action-buttons">
-  <button class="update-button">Update</button>
-  <button class="delete-button">Delete</button>
-  <button class="report-button">Report</button>
-</td>
+              <button onClick={handleUpdateClick} className="update-button">
+                Update
+              </button>
+              <button class="delete-button">Delete</button>
+              <button class="report-button">Report</button>
+            </td>
           </tr>
         </table>
       </div>
