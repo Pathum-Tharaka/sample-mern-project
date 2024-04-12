@@ -7,7 +7,7 @@ function Addprojects(props) {
   // Example data for suppliers
   const {
     _id,
-    projectName,
+    projctName,
     projectBudget,
     Employees,
     Status,
